@@ -3,7 +3,6 @@
   src: url("lib/Ohrenstead.ttf") format("truetype");
 }
 
-
 :root {
   --background: #08141e;
   --primary: #0f2a3f;
@@ -34,6 +33,11 @@ body {
 
 #tiles .tile {
   position: relative;
+  cursor: pointer;
+}
+
+#tiles .tile:hover:before {
+  background-color: var(--primary);
 }
 
 #tiles .tile:before {
@@ -59,6 +63,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-shadow: -2px 2px var(--primary);
 }
 
 #content #hero .contact {
@@ -70,9 +75,11 @@ body {
 #content #hero .greet {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2em;
 }
 
 #content #hero p {
+  margin: 0;
   font-size: 4em;
   color: var(--light);
 }
@@ -85,7 +92,7 @@ body {
 }
 
 #content #hero .greet small {
-  color: var(--light);
+  color: var(--secondary);
   font-size: 2em;
 }
 
