@@ -11,6 +11,7 @@
 }
 
 body {
+  cursor: url("image/mouse.png"), auto;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -33,7 +34,6 @@ body {
 
 #tiles .tile {
   position: relative;
-  cursor: pointer;
 }
 
 #tiles .tile:hover:before {
@@ -70,6 +70,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
+  font-size: 12px;
 }
 
 #content #hero .greet {
@@ -98,9 +99,9 @@ body {
 
 #content #hero a {
   font-size: 3em;
-  cursor: pointer;
   pointer-events: all;
   color: var(--light);
+  cursor: url("image/mouse.png"), auto;
 }
 
 @keyframes background-pan {
